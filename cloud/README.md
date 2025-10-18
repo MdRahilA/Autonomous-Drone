@@ -1,5 +1,5 @@
-# Drone System
+# Cloud Backend
 
-Contains source code for both Scout and Carrier drones.  
-Includes flight control scripts, path planning, object detection, and payload logic.
+Firebase-based backend managing missions, SOS requests, authentication, and real-time drone telemetry.  
+Also includes Firestore triggers and cloud functions.
 
