@@ -15,7 +15,23 @@ Coordinated dual-drone system that integrates with the **NIDAR** app to respond 
 ## 🧱 High-Level Architecture
 ## 🧠 Architecture Diagram
 
-![System Architecture](assets/diagram/drone_architecture.png)
+## 📸 Visual Overview
+
+### 🧠 Drone Architecture
+![Drone Architecture](assets/diagram/drone_architecture.png)
+
+### 🛰️ Mission Flow Diagram
+![Mission Flow](assets/diagram/drone_flow_diagram.png)
+
+### 🚁 Drone Overview
+![Drone Overview](assets/diagram/drone_over_view.jpg)
+
+### 🧩 Detailed Drone Diagram
+![Drone Diagram](assets/diagram/drone_diagram.jpg)
+
+### 🔗 App Integration
+![App Integration](assets/diagram/app_integration.jpg)
+
 
 flowchart LR
   A[NIDAR Mobile App\n(SOS + GPS)] --> B[Firebase Cloud\nAuth · Firestore · Functions]
