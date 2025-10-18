@@ -17,7 +17,7 @@ Coordinated dual-drone system that integrates with the **NIDAR** app to respond 
 ![System Architecture](diagrams/drone_architecture.png)
 
 ## 🛰️ Mission Timeline
-![Mission Timeline](diagrams/droneflowdiagram.png)
+![Mission Timeline](diagrams/drone_flow_diagram.png)
 
 
 
