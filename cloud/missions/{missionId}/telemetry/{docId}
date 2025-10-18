@@ -1,0 +1,8 @@
+{
+  "timestamp": "<serverTimestamp>",
+  "source": "scout | carrier",
+  "position": {"lat": 0.0, "lon": 0.0},
+  "battery": 85.4,
+  "speed_mps": 7.8,
+  "alt_m": 42.0
+}
