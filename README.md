@@ -1,7 +1,7 @@
 # Dual-Drone  (Scout + Carrier)
 
 ![GitHub repo size](https://img.shields.io/github/repo-size/MdRahilA/Dual-Drone-NIDAR?color=brightgreen)
-![GitHub license](https://img.shields.io/github/license/MdRahilA/Dual-Drone-NIDAR)
+![GitHub license](https://img.shields.io/github/LICENSE/MdRahilA/Dual-Drone-NIDAR)
 ![GitHub last commit](https://img.shields.io/github/last-commit/MdRahilA/Dual-Drone-NIDAR)
 ![Top language](https://img.shields.io/github/languages/top/MdRahilA/Dual-Drone-NIDAR)
 ![Contributors](https://img.shields.io/github/contributors/MdRahilA/Dual-Drone-NIDAR)
