@@ -1,5 +1,28 @@
-# NIDAR Mobile App
+# NIDAR Mobile App 📱
 
-Flutter/Android app used by field users to raise SOS alerts with live GPS.  
-Integrates Firebase for mission creation and live tracking.
+A Flutter-based mobile application that allows users to raise SOS alerts which trigger dual-drone missions.
 
+---
+
+## 🚀 Features (current)
+- Simple SOS button that sends alert (demo)
+- Basic Material 3 design
+- Placeholder for Firebase integration
+
+---
+
+## ⚙️ Tech Stack
+- Flutter 3.x
+- Dart
+- Firebase (planned)
+- Google Maps SDK (planned)
+
+---
+
+## ▶️ How to Run
+1. Install Flutter SDK: https://docs.flutter.dev/get-started/install  
+2. In terminal:
+   ```bash
+   cd mobile/app
+   flutter pub get
+   flutter run
