@@ -1,0 +1,6 @@
+{
+  "timestamp": "<serverTimestamp>",
+  "level": "INFO | WARN | ERROR",
+  "source": "planner | scout | carrier | admin",
+  "message": "human-readable log line"
+}
