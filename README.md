@@ -1,9 +1,5 @@
 # Dual-Drone  (Scout + Carrier)
 
-Coordinated dual-drone system that integrates with the **NIDAR** app to respond to SOS events.  
-- **Scout**: fast VTOL/quad for rapid area scan, visual/thermal search, live map.
-- **Carrier**: payload drone for delivery (first aid, radio, power), follows safe route from Scout.
-
 ![GitHub repo size](https://img.shields.io/github/repo-size/MdRahilA/Dual-Drone-NIDAR?color=brightgreen)
 ![GitHub license](https://img.shields.io/github/license/MdRahilA/Dual-Drone-NIDAR)
 ![GitHub last commit](https://img.shields.io/github/last-commit/MdRahilA/Dual-Drone-NIDAR)
@@ -15,6 +11,10 @@ Coordinated dual-drone system that integrates with the **NIDAR** app to respond 
 ![IoT Drone](https://img.shields.io/badge/Category-Drone%20%7C%20IoT-blueviolet)
 ![Status Prototype](https://img.shields.io/badge/Status-Prototype-success)
 
+
+Coordinated dual-drone system that integrates with the **NIDAR** app to respond to SOS events.  
+- **Scout**: fast VTOL/quad for rapid area scan, visual/thermal search, live map.
+- **Carrier**: payload drone for delivery (first aid, radio, power), follows safe route from Scout.
 
 
 > ⚠️ Research prototype — not certified for critical operations.
