@@ -13,11 +13,7 @@ Coordinated dual-drone system that integrates with the **NIDAR** app to respond 
 - Live telemetry to admin panel; audit & mission logs
 
 ## 🧱 High-Level Architecture
-## 🧠 Architecture Diagram
-
-## 📸 Visual Overview
-
-### 🧠 Drone Architecture
+#
 ![Drone Architecture](assets/diagram/drone_architecture.png)
 
 ### 🛰️ Mission Flow Diagram
