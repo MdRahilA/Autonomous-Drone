@@ -1,0 +1,92 @@
+<!-- web-admin/index.html -->
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>Dual-Drone NIDAR — Admin</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <style>
+    :root { --bg:#0b1020; --card:#151b2f; --text:#e8ecff; --muted:#a9b2d0; --accent:#4f8cff; }
+    * { box-sizing: border-box; }
+    body { margin: 0; font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial; background: var(--bg); color: var(--text); }
+    header { padding: 18px 22px; border-bottom: 1px solid #22283f; display:flex; align-items:center; gap:14px; }
+    header h1 { font-size: 18px; margin:0; }
+    .tag { background: #1f2846; color: var(--accent); padding:4px 8px; border-radius: 999px; font-size: 12px; }
+    main { display: grid; gap: 16px; grid-template-columns: 1.2fr 1fr; padding: 16px; }
+    .card { background: var(--card); border:1px solid #22283f; border-radius: 14px; padding: 14px; }
+    .title { font-size: 14px; color: var(--muted); margin:0 0 8px; }
+    #map { height: 460px; border-radius: 10px; background: #0f1428; border:1px dashed #2a3356; display:flex; align-items:center; justify-content:center; color:#6f7aa5; }
+    .grid-2 { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+    table { width: 100%; border-collapse: collapse; font-size: 14px; }
+    th, td { text-align: left; padding: 8px 10px; border-bottom: 1px solid #22283f; color: #cfd7ff; }
+    th { color: var(--muted); font-weight: 600; }
+    .pill { padding:2px 8px; border-radius: 999px; font-size: 12px; background:#1f2846; color:#cdd6ff; }
+    footer { color:#6f7aa5; text-align:center; padding: 10px 0 20px; }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Dual-Drone NIDAR — Admin Console</h1>
+    <span class="tag">Demo</span>
+  </header>
+
+  <main>
+    <section class="card">
+      <p class="title">Live Map (placeholder)</p>
+      <div id="map">Map placeholder — integrate Mapbox/Leaflet later</div>
+    </section>
+
+    <section class="card">
+      <p class="title">Mission Status</p>
+      <div class="grid-2">
+        <div>
+          <div><strong>Mission:</strong> <span id="missionId">demo-mission-001</span></div>
+          <div><strong>Status:</strong> <span class="pill" id="status">ACTIVE</span></div>
+          <div><strong>SOS:</strong> <span id="sos">17.3850, 78.4867</span></div>
+        </div>
+        <div>
+          <div><strong>Scout:</strong> <span id="scout">drone-scout-01</span></div>
+          <div><strong>Carrier:</strong> <span id="carrier">drone-carrier-01</span></div>
+          <div><strong>Updated:</strong> <span id="updated">—</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="card">
+      <p class="title">Recent Events</p>
+      <table id="events">
+        <thead>
+          <tr>
+            <th>Time</th><th>Source</th><th>Type</th><th>Details</th>
+          </tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+    </section>
+  </main>
+
+  <footer>© Dual-Drone NIDAR · Prototype</footer>
+
+  <script>
+    // Demo: fabricate a few events so the UI looks alive
+    const tbody = document.querySelector("#events tbody");
+    const $ = (s)=>document.querySelector(s);
+    function now() { return new Date().toLocaleTimeString(); }
+
+    const demo = [
+      { t: now(), src:"scout",   type:"detection", details:"thermal hotspot @ 17.3857, 78.4879 (0.87)" },
+      { t: now(), src:"carrier", type:"telemetry", details:"enroute speed=8.2 m/s batt=84%" },
+      { t: now(), src:"carrier", type:"payload",   details:"DROP success @ 17.3870, 78.4895" },
+    ];
+
+    function addRow(e) {
+      const tr = document.createElement("tr");
+      tr.innerHTML = `<td>${e.t}</td><td>${e.src}</td><td>${e.type}</td><td>${e.details}</td>`;
+      tbody.prepend(tr);
+    }
+
+    demo.forEach(addRow);
+    $("#updated").textContent = new Date().toLocaleString();
+  </script>
+</body>
+</html>
