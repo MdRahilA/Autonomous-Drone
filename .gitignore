@@ -1,0 +1,39 @@
+# --- Python ---
+__pycache__/
+*.pyc
+.venv/
+.env
+*.log
+
+# --- Node / Web ---
+node_modules/
+dist/
+.next/
+.cache/
+*.local
+
+# --- Flutter / Android ---
+**/build/
+**/.dart_tool/
+**/.flutter-plugins
+**/.flutter-plugins-dependencies
+**/.packages
+**/pubspec.lock
+*.keystore
+*.jks
+
+# --- Firebase ---
+.firebase/
+.firebaserc.local
+serviceAccount*.json
+**/.runtimeconfig.json
+
+# --- OS / IDE ---
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# --- Data / Logs ---
+**/logs/
+*.jsonl
