@@ -17,11 +17,6 @@ Coordinated dual-drone system that integrates with the **NIDAR** app to respond 
 
 ![System Architecture](assets/diagram/drone_architecture.png)
 
-## 🛰️ Mission Timeline
-![Mission Timeline](assets/diagram/drone_flow_diagram.png)
-
-
-
 flowchart LR
   A[NIDAR Mobile App\n(SOS + GPS)] --> B[Firebase Cloud\nAuth · Firestore · Functions]
   B --> C[Mission Planner\n(task builder + geofences)]
