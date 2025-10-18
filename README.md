@@ -53,4 +53,37 @@ sequenceDiagram
   FB->>Admin: Status (ENROUTE → DROP → COMPLETE)
   Admin->>FB: Close mission with audit log
 
+## ⚙️ Tech Stack
+
+**Hardware**
+- DJI / Custom Drone Frames  
+- Pixhawk 6X / Cube Orange+ Flight Controller  
+- Jetson Nano / Raspberry Pi 4 (Edge AI Processing)  
+- GPS, LiDAR, Ultrasonic & Thermal Sensors  
+- ESCs, Propulsion System, Power Distribution Unit  
+
+**Software & Cloud**
+- Python, OpenCV, YOLOv8 (Computer Vision)  
+- Firebase (Realtime DB, Auth, Cloud Functions)  
+- React / Next.js (Admin Dashboard)  
+- Android Studio (NIDAR App)  
+- MQTT / MAVLink for Drone Communication  
+- Flask API for backend coordination  
+
+**AI Modules**
+- Object & Victim Detection  
+- Path Planning & Obstacle Avoidance  
+- Mission Automation Logic  
+
+
+## 🔮 Future Scope
+
+- Integration of **Swarm Intelligence** for multi-drone coordination.  
+- Deploy **Edge AI** on Jetson devices for faster detection and decision-making.  
+- Enable **5G connectivity** for ultra-low-latency communication.  
+- Use **Blockchain-based mission logging** for secure audit trails.  
+- Incorporate **voice-controlled SOS features** in the NIDAR mobile app.  
+- Extend payload capacity and hybrid power system for long-range missions.  
+
+
 
