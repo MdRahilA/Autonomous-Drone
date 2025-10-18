@@ -1,0 +1,8 @@
+{
+  "timestamp": "<serverTimestamp>",
+  "source": "carrier",
+  "action": "DROP",
+  "result": "SUCCESS | FAIL",
+  "position": {"lat": 0.0, "lon": 0.0},
+  "photoUrl": null
+}
